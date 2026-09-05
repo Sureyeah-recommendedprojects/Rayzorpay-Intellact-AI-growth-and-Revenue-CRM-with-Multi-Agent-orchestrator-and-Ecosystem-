@@ -1,8 +1,10 @@
-# Payments & Commerce (Wave 7 — Track 01)
+# Intellact Payments & Commerce (Wave 7 — Track 01)
 
-The money loop that connects MediaOS campaigns to Razorpay test-mode revenue. Every money action
+The money loop that connects Intellact campaigns to Razorpay test-mode revenue. Every money action
 is explainable, bounded, gated by a deterministic policy engine, and logged to an append-only
 audit trail — the Track 01 bar.
+
+> **Ecosystem boundary:** Intellact is the only application that owns Razorpay credentials, payment policy, Checkout, and the audit ledger. RayzorFlow may prepare an order, payment-link, refund, or settlement-review workflow, but it returns a `ready` or `approval_required` result and does not make a Razorpay call. See [ecosystem.md](./ecosystem.md).
 
 Cross-references: [architecture](./architecture.md), [campaigns](./campaigns.md),
 [landing-pages](./landing-pages.md), [analytics](./analytics.md),

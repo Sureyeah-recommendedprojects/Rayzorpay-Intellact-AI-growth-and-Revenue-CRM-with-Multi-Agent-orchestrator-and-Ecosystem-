@@ -6,7 +6,7 @@
 
 ## Context
 
-MediaOS Waves 0–6 built a complete research-to-landing pipeline but stopped at email lead capture.
+Intellact Waves 0–6 built a complete research-to-landing pipeline but stopped at email lead capture.
 Track 01 of the Razorpay AI Buildathon requires: (1) an agent that grows merchant revenue on
 Razorpay test-mode APIs, and (2) a merchant transactable by an AI buyer end to end. The bar is
 "every money action explainable, bounded and gated; show the audit trail and one failure handled
@@ -78,7 +78,7 @@ upsell → checkout → scorecard → reallocate. Demo mode includes the checkou
 
 ## Consequences
 
-- **Positive:** MediaOS becomes a complete Track 01 submission covering all four example directions
+- **Positive:** Intellact becomes a complete Track 01 submission covering all four example directions
   (campaign orchestrator, conversational checkout, agent-readable catalog, upsell). The audit trail
   and failure handling are first-class, not bolted on. Real GMV replaces modeled conversions.
 - **Negative:** Seven new tables and four API routes increase the surface area. The policy engine

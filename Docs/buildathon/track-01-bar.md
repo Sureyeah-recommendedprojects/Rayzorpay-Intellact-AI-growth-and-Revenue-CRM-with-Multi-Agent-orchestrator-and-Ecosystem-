@@ -7,7 +7,7 @@ handled gracefully."
 
 ## Money-action taxonomy
 
-A "money action" in MediaOS is any operation that creates, modifies, or settles a financial
+A "money action" in Intellact is any operation that creates, modifies, or settles a financial
 commitment. Each must be gated by the policy engine and logged to `audit_events`.
 
 | Action | Razorpay API | Policy gate | Audit event |

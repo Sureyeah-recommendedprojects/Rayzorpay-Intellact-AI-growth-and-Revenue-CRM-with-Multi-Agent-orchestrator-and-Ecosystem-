@@ -1,6 +1,6 @@
 # API & Server Actions
 
-The contract surface for MediaOS. Mutations are **Server Actions**; public/streaming/webhook
+The contract surface for Intellact. Mutations are **Server Actions**; public/streaming/webhook
 surfaces are **Route Handlers** under `src/app/api`. This is the foundation plan - each row is filled
 in by its module's phase. Every input is validated with the Zod schema named in the last column
 (`src/lib/validators`); every server-side mutation re-checks auth (RLS + `auth.uid()`), per the

@@ -1,6 +1,6 @@
 # Runbook
 
-How to set up, run, test, and ship MediaOS. Windows/PowerShell friendly.
+How to set up, run, test, and ship Intellact. Windows/PowerShell friendly.
 
 ---
 
@@ -67,6 +67,20 @@ RLS details: [ADR 0003](./adr/0003-rls-strategy.md).
 ```bash
 npm run dev        # http://localhost:3000
 ```
+
+### Run the RayzorFlow ecosystem companion
+
+RayzorFlow is a separate local application that powers the visual workflow canvas. It must run in a second terminal so Intellact's **Rayzor Ecosystem** navigation can open it.
+
+```powershell
+cd C:\Users\HP\Desktop\FlowMon-main\FlowMon
+npm install
+npm run dev         # http://localhost:3001/app
+```
+
+Verify the hand-off: open `http://localhost:3000`, select **Rayzor Ecosystem**, and confirm the browser opens `http://localhost:3001/app`.
+
+The URL defaults to `http://localhost:3001/app`; set `NEXT_PUBLIC_RAYZORFLOW_URL` in Intellact when using a different RayzorFlow environment. See [ecosystem.md](./ecosystem.md) for ownership and collision rules.
 
 ## 6. Quality gates
 
@@ -142,7 +156,7 @@ RAZORPAY_WEBHOOK_SECRET=...                        # YOU choose this when creati
 ### Webhook setup
 
 1. Dashboard → Account & Settings → Webhooks → **+ Add New Webhook**.
-2. Webhook URL: `https://mediaos-kappa.vercel.app/api/webhooks/razorpay`
+2. Webhook URL: `https://<your-intellact-domain>/api/webhooks/razorpay`
 3. Secret: **create your own** random string ≥ 32 chars. This becomes your `RAZORPAY_WEBHOOK_SECRET`.
    Example: `whsec_mediaos_track01_<random32chars>`
 4. Events: `payment.captured`, `payment.failed`, `order.paid`.

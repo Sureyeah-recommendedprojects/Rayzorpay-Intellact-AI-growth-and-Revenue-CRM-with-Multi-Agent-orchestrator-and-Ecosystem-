@@ -6,7 +6,7 @@
 
 ## Context
 
-MediaOS is multi-tenant: every user's campaigns, research, creatives, and analytics must be isolated.
+Intellact is multi-tenant: every user's campaigns, research, creatives, and analytics must be isolated.
 At the same time, **deployed landing pages are public** (`/lp/[slug]`) and must accept **anonymous**
 lead submissions and page-view pings - without exposing any authed data or letting anonymous writers
 forge rows against pages they don't own. We want authorization enforced by the database, not just the

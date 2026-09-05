@@ -1,4 +1,4 @@
-# MediaOS - Project Progress (single source of truth)
+# Intellact - Project Progress (single source of truth)
 
 This is the durable tracker a fresh agent can resume from. Update it in the same change that alters
 status. Cross-references: [architecture](./architecture.md), [ADRs](./adr/),
@@ -9,7 +9,7 @@ status. Cross-references: [architecture](./architecture.md), [ADRs](./adr/),
 
 ## Objective
 
-Build **MediaOS** - an AI-native media buying platform whose primary surface is **the Operator**, an
+Build **Intellact** - an AI-native media buying platform whose primary surface is **the Operator**, an
 autonomous agent that plans, executes, monitors, and improves marketing campaigns end to end. The
 moat is the **Audience Research Intelligence Engine** (OpenBB-inspired, real data via Bright Data).
 Goal: investor-demo quality, senior-level system design, win the It's Today Media build challenge.
@@ -435,7 +435,7 @@ A module is **not done** until all of the following are true (evidence shown, no
 
 Status: **IN PROGRESS**
 
-Objective: Upgrade MediaOS from an AI media buyer into a full Track 01 growth + agentic-commerce
+Objective: Upgrade Intellact from an AI media buyer into a full Track 01 growth + agentic-commerce
 system. Razorpay test-mode money loop, campaign orchestrator with a bounded ₹ objective,
 conversational + catalog checkout, upsell/cross-sell, AP2-style mandates, audit trail, and graceful
 failure. Production quality, no deadline-driven cuts.

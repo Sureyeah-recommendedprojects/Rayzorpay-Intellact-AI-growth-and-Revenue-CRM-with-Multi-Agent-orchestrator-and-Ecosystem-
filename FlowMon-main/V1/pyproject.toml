@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pymon"
+version = "2.0.0"
+description = "Python-powered smart contract deployment tool for Monad blockchain"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+keywords = ["pymon", "monad", "blockchain", "smart-contracts", "ethereum", "evm", "web3", "python"]
+authors = [
+    {name = "PyMon Team", email = "contact@pymon.io"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "web3>=6.0.0",
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "eth-account>=0.10.0",
+    "cryptography>=41.0.0",
+    "pycryptodome>=3.0.0",
+]
+
+[project.optional-dependencies]
+solidity = ["py-solc-x>=2.0.0"]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/pymon"
+Documentation = "https://github.com/yourusername/pymon#readme"
+Repository = "https://github.com/yourusername/pymon"
+Issues = "https://github.com/yourusername/pymon/issues"
+"Monad Blockchain" = "https://monad.xyz"
+
+[project.scripts]
+pymon = "pymon.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pymon*"]
+exclude = ["tests*", "avax_cli*", "monad_cli*"]
+
+[tool.setuptools.package-data]
+pymon = ["*.json", "templates/*"]

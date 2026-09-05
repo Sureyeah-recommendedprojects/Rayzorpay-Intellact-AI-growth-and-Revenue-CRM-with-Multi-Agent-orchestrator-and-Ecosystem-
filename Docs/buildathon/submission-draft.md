@@ -10,7 +10,7 @@ Pre-filled for the application form. Video URL added after recording.
 
 ## Project name
 
-MediaOS — Autonomous Merchant Growth Agent
+Intellact — Autonomous Merchant Growth Agent
 
 ## Problem statement
 
@@ -20,7 +20,7 @@ lose conversions because the path from ad to payment is fragmented. Meanwhile, t
 race (NPCI UAP, OpenAI/Stripe ACP, Google AP2, Coinbase x402) is standardizing how AI agents
 discover products, negotiate price, and pay — but merchants have no tool to participate.
 
-MediaOS is an autonomous AI growth agent that closes this loop end to end: it researches Indian
+Intellact is an autonomous AI growth agent that closes this loop end to end: it researches Indian
 buyers with live web data (6 Bright Data providers), orchestrates a bounded ₹ campaign, generates
 platform-specific creatives and conversion-optimized landing pages, exposes an agent-readable product
 catalog, collects rupees through Razorpay test-mode Standard Checkout, upsells within a signed
@@ -29,7 +29,7 @@ append-only audit trail on every money action, including graceful handling of pa
 
 ## Architecture (paragraph)
 
-MediaOS is a Next.js 16 / React 19 / TypeScript strict application deployed on Vercel with Supabase
+Intellact is a Next.js 16 / React 19 / TypeScript strict application deployed on Vercel with Supabase
 (Postgres + RLS + Auth) as the persistence layer. The primary surface is the Operator, an autonomous
 agent running a plan-execute-observe loop (Vercel AI SDK v7 + Azure AI Foundry gpt-5.3-chat) with
 25 typed, Zod-validated tools spanning research, campaign strategy, creative generation, landing

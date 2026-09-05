@@ -6,7 +6,7 @@
 
 ## Context
 
-MediaOS must feel like an AI-native operations console: streaming agent reasoning, real artifacts,
+Intellact must feel like an AI-native operations console: streaming agent reasoning, real artifacts,
 real data, real persistence - on a live URL a judge can use in minutes. We need a stack that
 supports React Server Components + streaming, first-class tool-calling, strict typing end to end,
 row-level-secured multi-tenant data, and a dark-first dense UI without bespoke design debt.

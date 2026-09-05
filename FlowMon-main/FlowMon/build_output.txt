@@ -1,0 +1,98 @@
+   Γû▓ Next.js 15.5.14
+
+   Creating an optimized production build ...
+ ΓÜá Compiled with warnings in 4.6s
+
+./node_modules/.pnpm/@metamask+sdk@0.33.1_bufferutil@4.1.0_utf-8-validate@6.0.6/node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js
+Module not found: Can't resolve '@react-native-async-storage/async-storage' in 'P:\FlowMon\FlowMon\FlowMon\node_modules\.pnpm\@metamask+sdk@0.33.1_bufferutil@4.1.0_utf-8-validate@6.0.6\node_modules\@metamask\sdk\dist\browser\es'
+
+Import trace for requested module:
+./node_modules/.pnpm/@metamask+sdk@0.33.1_bufferutil@4.1.0_utf-8-validate@6.0.6/node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js
+./node_modules/.pnpm/@wagmi+connectors@6.2.0_@ta_2c93487debbfd538c02374f184b89b4c/node_modules/@wagmi/connectors/dist/esm/metaMask.js
+./node_modules/.pnpm/@wagmi+connectors@6.2.0_@ta_2c93487debbfd538c02374f184b89b4c/node_modules/@wagmi/connectors/dist/esm/exports/index.js
+./node_modules/.pnpm/wagmi@2.19.5_@tanstack+quer_bc2e6d6b15bd507b640b93ce61266bee/node_modules/wagmi/dist/esm/exports/connectors.js
+./node_modules/.pnpm/@rainbow-me+rainbowkit@2.2._fca48d083511df86db562a33a8e5db0b/node_modules/@rainbow-me/rainbowkit/dist/index.js
+./src/app/providers.tsx
+./src/app/app/page.tsx
+
+./node_modules/.pnpm/pino@7.11.0/node_modules/pino/lib/tools.js
+Module not found: Can't resolve 'pino-pretty' in 'P:\FlowMon\FlowMon\FlowMon\node_modules\.pnpm\pino@7.11.0\node_modules\pino\lib'
+
+Import trace for requested module:
+./node_modules/.pnpm/pino@7.11.0/node_modules/pino/lib/tools.js
+./node_modules/.pnpm/pino@7.11.0/node_modules/pino/pino.js
+./node_modules/.pnpm/@walletconnect+logger@2.1.2/node_modules/@walletconnect/logger/dist/index.es.js
+./node_modules/.pnpm/@walletconnect+universal-pr_15af33306af179d145d0813e1447a6c9/node_modules/@walletconnect/universal-provider/dist/index.es.js
+./node_modules/.pnpm/@walletconnect+ethereum-pro_edc3a100948e5210b96ae74c2ddcc5bd/node_modules/@walletconnect/ethereum-provider/dist/index.es.js
+./node_modules/.pnpm/@wagmi+connectors@6.2.0_@ta_2c93487debbfd538c02374f184b89b4c/node_modules/@wagmi/connectors/dist/esm/walletConnect.js
+./node_modules/.pnpm/@wagmi+connectors@6.2.0_@ta_2c93487debbfd538c02374f184b89b4c/node_modules/@wagmi/connectors/dist/esm/exports/index.js
+./node_modules/.pnpm/wagmi@2.19.5_@tanstack+quer_bc2e6d6b15bd507b640b93ce61266bee/node_modules/wagmi/dist/esm/exports/connectors.js
+./node_modules/.pnpm/@rainbow-me+rainbowkit@2.2._fca48d083511df86db562a33a8e5db0b/node_modules/@rainbow-me/rainbowkit/dist/index.js
+./src/app/providers.tsx
+./src/app/app/page.tsx
+
+ ΓÜá Compiled with warnings in 4.2s
+
+./node_modules/.pnpm/@metamask+sdk@0.33.1_bufferutil@4.1.0_utf-8-validate@6.0.6/node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js
+Module not found: Can't resolve '@react-native-async-storage/async-storage' in 'P:\FlowMon\FlowMon\FlowMon\node_modules\.pnpm\@metamask+sdk@0.33.1_bufferutil@4.1.0_utf-8-validate@6.0.6\node_modules\@metamask\sdk\dist\browser\es'
+
+Import trace for requested module:
+./node_modules/.pnpm/@metamask+sdk@0.33.1_bufferutil@4.1.0_utf-8-validate@6.0.6/node_modules/@metamask/sdk/dist/browser/es/metamask-sdk.js
+./node_modules/.pnpm/@wagmi+connectors@6.2.0_@ta_2c93487debbfd538c02374f184b89b4c/node_modules/@wagmi/connectors/dist/esm/metaMask.js
+./node_modules/.pnpm/@wagmi+connectors@6.2.0_@ta_2c93487debbfd538c02374f184b89b4c/node_modules/@wagmi/connectors/dist/esm/exports/index.js
+./node_modules/.pnpm/wagmi@2.19.5_@tanstack+quer_bc2e6d6b15bd507b640b93ce61266bee/node_modules/wagmi/dist/esm/exports/connectors.js
+./node_modules/.pnpm/@rainbow-me+rainbowkit@2.2._fca48d083511df86db562a33a8e5db0b/node_modules/@rainbow-me/rainbowkit/dist/index.js
+./src/app/providers.tsx
+./src/app/app/page.tsx
+
+ Γ£ô Compiled successfully in 9.0s
+   Linting and checking validity of types ...
+ Γ¿» ESLint: Cannot find package '@eslint/eslintrc' imported from P:\FlowMon\FlowMon\FlowMon\eslint.config.mjs Did you mean to import "@eslint/eslintrc/dist/eslintrc.cjs"?
+   Collecting page data ...
+   Generating static pages (0/8) ...
+   Generating static pages (2/8) 
+ReferenceError: indexedDB is not defined
+    at <unknown> (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:5137)
+    at <unknown> (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:5267)
+    at u (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:5399)
+    at getItem (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:11283)
+    at j (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:4229)
+    at Object.getItem (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:7001)
+    at w.getItem (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:12125)
+    at B (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:13492)
+    at new D (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:14069)
+    at new gF (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:10:91778)
+ReferenceError: indexedDB is not defined
+    at <unknown> (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:5137)
+    at <unknown> (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:5267)
+    at u (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:5399)
+    at getItem (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:11283)
+    at j (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:4229)
+    at Object.getItem (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:7001)
+    at w.getItem (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:12125)
+    at B (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:13492)
+    at new D (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:79:14069)
+    at new gF (P:\FlowMon\FlowMon\FlowMon\.next\server\chunks\2759.js:10:91778)
+   Generating static pages (4/8) 
+   Generating static pages (6/8) 
+ Γ£ô Generating static pages (8/8)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+Γöî Γùï /                                    6.95 kB         118 kB
+Γö£ Γùï /_not-found                            996 B         106 kB
+Γö£ ╞Æ /api/agent-execute                     139 B         105 kB
+Γö£ ╞Æ /api/agent-x                           139 B         105 kB
+Γö£ ╞Æ /api/agents/[agentId]                  139 B         105 kB
+Γö£ ╞Æ /api/negotiate                         139 B         105 kB
+Γöö Γùï /app                                  303 kB         414 kB
++ First Load JS shared by all             105 kB
+  Γö£ chunks/73cfcf22-8c90cff940dd9a32.js  54.2 kB
+  Γö£ chunks/9736-a66e84095ca263c7.js        46 kB
+  Γöö other shared chunks (total)          4.43 kB
+
+
+Γùï  (Static)   prerendered as static content
+╞Æ  (Dynamic)  server-rendered on demand
+

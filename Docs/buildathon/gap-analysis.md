@@ -1,4 +1,4 @@
-# Gap Analysis — MediaOS Track 01
+# Gap Analysis — Intellact Track 01
 
 Current state after Wave 7 (shipped, deployed at https://mediaos-kappa.vercel.app).
 

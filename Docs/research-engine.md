@@ -1,6 +1,6 @@
 # Audience Research Intelligence Engine
 
-The research engine is MediaOS's moat: an OpenBB-inspired **"connect once, consume everywhere"**
+The research engine is Intellact's moat: an OpenBB-inspired **"connect once, consume everywhere"**
 system that aggregates live web data into a single, normalized, citation-rich result, then
 synthesizes it into personas and opportunities. This page is the engineering reference - the
 contract, the moving parts, the real Bright Data integration, graceful degradation, persistence,

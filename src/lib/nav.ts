@@ -25,7 +25,7 @@ export interface NavRoute {
 export const NAV_ROUTES: NavRoute[] = [
   { href: "/", label: "Command Center", description: "Your campaigns, live performance, and the agent's daily brief", icon: Gauge },
   { href: "/operator", label: "Operator", description: "Hire the AI growth agent to plan, execute, and optimize end to end", icon: Robot },
-  { href: process.env.NEXT_PUBLIC_RAYZORFLOW_URL ?? "http://localhost:3001", label: "Rayzor Ecosystem", description: "Open RayzorFlow to compose and govern commerce-agent workflows", icon: Network },
+  { href: process.env.NEXT_PUBLIC_RAYZORFLOW_URL ?? "http://localhost:3001/app", label: "Rayzor Ecosystem", description: "Open RayzorFlow to compose and govern commerce-agent workflows", icon: Network },
   { href: "/campaigns", label: "Campaigns", description: "Briefs, budgets, and the lifecycle of every campaign", icon: Megaphone },
   { href: "/creatives", label: "Creatives", description: "Platform-ready ad copy and visuals", icon: ImagesSquare },
   { href: "/landing-pages", label: "Landing Pages", description: "Generate, deploy, and collect Razorpay checkout revenue", icon: Browsers },

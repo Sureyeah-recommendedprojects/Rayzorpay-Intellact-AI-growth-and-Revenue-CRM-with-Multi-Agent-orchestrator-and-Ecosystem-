@@ -1,6 +1,6 @@
 # Azure AI Foundry Models
 
-How MediaOS's AI capabilities (Operator reasoning/copy + Creative Studio visuals) map
+How Intellact's AI capabilities (Operator reasoning/copy + Creative Studio visuals) map
 onto the Azure AI Foundry models the user provisioned. **This is the Azure AI Foundry
 OpenAI-compatible `v1` surface (`services.ai.azure.com`), which is _different_ from
 classic Azure OpenAI (`*.openai.azure.com`).** [`src/lib/ai/azure.ts`](../src/lib/ai/azure.ts) has been **adapted** to this surface
@@ -31,7 +31,7 @@ classic Azure OpenAI (`*.openai.azure.com`).** [`src/lib/ai/azure.ts`](../src/li
 | API key (shared by both models) | `1284...g4Xs` — **masked here on purpose; the real key lives only in git-ignored `.env.local`. Rotate it (the user will rotate).** |
 
 > Note on the image endpoint: two forms were observed during provisioning —
-> `.../openai/v1/images/generations` and `.../mai/v1/images/generations`. MediaOS
+> `.../openai/v1/images/generations` and `.../mai/v1/images/generations`. Intellact
 > standardizes on the `/openai/v1/...` form (stored in `AZURE_OPENAI_IMAGE_ENDPOINT`).
 
 ---
@@ -52,9 +52,9 @@ classic Azure OpenAI (`*.openai.azure.com`).** [`src/lib/ai/azure.ts`](../src/li
 - **Endpoint (live-confirmed working):**
   `https://aditjain2005-0132-resource.services.ai.azure.com/mai/v1/images/generations`
   — the `/openai/v1/images/generations` form passes input validation but returns
-  **HTTP 404** on the actual generation, so MediaOS uses the `/mai/v1/...` form.
+  **HTTP 404** on the actual generation, so Intellact uses the `/mai/v1/...` form.
 - **`output_format` is a MIME type:** allowed values are `image/png`, `image/jpeg`,
-  `image/webp` (or `null`). The bare `png` string is rejected with HTTP 400. MediaOS
+  `image/webp` (or `null`). The bare `png` string is rejected with HTTP 400. Intellact
   sends `image/png`.
 - **Response shape:** returns `data[0].b64_json` (base64 PNG bytes, no `data:` prefix).
 - **Auth:** `Authorization: Bearer <key>`.
@@ -126,7 +126,7 @@ The equivalent in JS/TS uses the `openai` package with `baseURL` + `apiKey` and
 
 ---
 
-## 5. MediaOS integration (DONE)
+## 5. Intellact integration (DONE)
 
 **Completed + live-validated 2026-06-30.** `src/lib/ai/azure.ts` and `src/lib/env.ts`
 now target the Foundry v1 surface; the exported client signatures

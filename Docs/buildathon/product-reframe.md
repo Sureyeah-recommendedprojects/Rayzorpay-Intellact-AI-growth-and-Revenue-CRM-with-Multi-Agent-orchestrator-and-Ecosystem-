@@ -1,4 +1,4 @@
-# Product Reframe — MediaOS for Track 01
+# Product Reframe — Intellact for Track 01
 
 ---
 
@@ -32,11 +32,11 @@ Indian D2C digital + physical-adjacent: **AarogyaFit**.
 | Time | Beat | Show |
 |------|------|------|
 | 0:00–0:30 | **Problem.** Small Indian merchants have no media team and no agentic checkout. NPCI UAP, ACP, AP2, x402 are the 2026 protocol race; Razorpay test-mode is the rail. | Slide or narrated intro |
-| 0:30–1:00 | **Solution.** MediaOS: research → orchestrate → catalog → Razorpay rupee → optimize, with mandates on every money action. | Architecture diagram |
+| 0:30–1:00 | **Solution.** Intellact: research → orchestrate → catalog → Razorpay rupee → optimize, with mandates on every money action. | Architecture diagram |
 | 1:00–2:30 | **Live demo.** Operator golden path: research → campaign → creatives → LP → deploy → pay ₹1,499 with test card → GMV ticks on Command Center. | Screen recording of live URL |
 | 2:30–3:30 | **Architecture deep dive.** Typed tools → policy engine → mandate → Razorpay Orders API → webhook → audit. Show catalog JSON at `/api/commerce/catalog`. | Code + diagram |
 | 3:30–4:30 | **Results.** Scorecard: audience A/B/C CTR/CVR/CPA. Agent reallocates C→B with reason. Trigger `failure@razorpay` → stop-rule → audit line. | Dashboard + audit timeline |
-| 4:30–5:00 | **Why Razorpay.** "MediaOS doesn't just generate marketing. It closes the loop between acquisition and payment. The merchant is sellable to AI buyers." | Closing slide |
+| 4:30–5:00 | **Why Razorpay.** "Intellact doesn't just generate marketing. It closes the loop between acquisition and payment. The merchant is sellable to AI buyers." | Closing slide |
 
 ---
 

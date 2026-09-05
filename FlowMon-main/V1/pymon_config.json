@@ -1,0 +1,7 @@
+{
+  "network": "monad-testnet",
+  "rpc_url": "https://testnet-rpc.monad.xyz/",
+  "chain_id": 10143,
+  "explorer_url": "https://testnet.monadexplorer.com/",
+  "faucet_url": "https://discord.gg/monaddev"
+}

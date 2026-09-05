@@ -1,6 +1,6 @@
-# Operator Tools — wiring every module into the agent
+# Intellact Operator Tools — wiring every module into the agent
 
-The Operator is MediaOS's hero surface: an autonomous agent that **plans, executes,
+The Operator is Intellact's hero surface: an autonomous agent that **plans, executes,
 monitors, and improves** a campaign end to end. It does real work by calling
 **typed, Zod-validated tools** that wrap the same module services the manual
 screens use — so the agent and the cockpit can never diverge.

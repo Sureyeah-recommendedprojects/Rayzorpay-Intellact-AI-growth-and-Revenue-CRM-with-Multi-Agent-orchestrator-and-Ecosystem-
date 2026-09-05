@@ -1,0 +1,382 @@
+@import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+
+/* ── RayzorFlow Design System ───────────────────────────────── */
+
+:root {
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-body: Inter, Arial, sans-serif;
+  --font-code: "Cascadia Code", Consolas, monospace;
+  /* Backgrounds */
+  --bg-base:        #0f0f14;
+  --bg-surface:     #1a1a24;
+  --bg-elevated:    #242430;
+  --bg-node:        #16162a;
+
+  /* Purple Palette */
+  --purple-primary: #8B5CF6;
+  --purple-hover:   #A78BFA;
+  --purple-dim:     #6D48D9;
+  --purple-glow:    #8B5CF626;
+  --purple-border:  #8B5CF630;
+  --purple-muted:   #8B5CF618;
+
+  /* Text */
+  --text-primary:   #F1F0F5;
+  --text-secondary: #A9A6BF;
+  --text-muted:     #5E5C72;
+  --text-code:      #c4b5fd;
+
+  /* Status */
+  --green-live:     #4ade80;
+  --red-error:      #f87171;
+  --amber-stub:     #fbbf24;
+
+  /* Borders */
+  --border-subtle:  #2a2a38;
+  --border-card:    #2a2a38;
+
+  /* Radius */
+  --radius-sm:      8px;
+  --radius-md:      12px;
+  --radius-lg:      16px;
+  --radius-xl:      24px;
+  --radius-full:    9999px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-base);
+  color: var(--text-secondary);
+  font-family: var(--font-body), "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Typography ───────────────────────────────────────────── */
+.font-heading {
+  font-family: var(--font-heading), "DM Serif Display", Georgia, serif;
+}
+
+.font-code {
+  font-family: var(--font-code), "JetBrains Mono", monospace;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading), "DM Serif Display", Georgia, serif;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+/* ── Buttons ──────────────────────────────────────────────── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: var(--purple-primary);
+  color: #fff;
+  font-family: var(--font-body), "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background: var(--purple-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px #8B5CF640;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: transparent;
+  color: var(--text-secondary);
+  font-family: var(--font-body), "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  border-color: var(--purple-primary);
+  color: var(--text-primary);
+  transform: translateY(-1px);
+}
+
+/* ── Cards ────────────────────────────────────────────────── */
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--purple-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px #8B5CF614;
+}
+
+.card-highlighted {
+  background: var(--purple-primary);
+  border: 1px solid var(--purple-primary);
+  border-radius: var(--radius-lg);
+  transition: all 0.3s ease;
+}
+
+.card-highlighted:hover {
+  background: var(--purple-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px #8B5CF630;
+}
+
+/* ── Accent text ──────────────────────────────────────────── */
+.text-accent {
+  color: var(--purple-primary);
+  font-style: italic;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--purple-primary), #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Section spacing ──────────────────────────────────────── */
+.section {
+  padding: 100px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  margin: 0;
+}
+
+/* ── Icon badges ──────────────────────────────────────────── */
+.icon-badge {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--purple-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  flex-shrink: 0;
+}
+
+.icon-badge svg {
+  width: 22px;
+  height: 22px;
+  stroke: #fff;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ── Toggle switch ────────────────────────────────────────── */
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px;
+  border-radius: var(--radius-full);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+}
+
+.toggle-option {
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--font-body), "Inter", sans-serif;
+}
+
+.toggle-option.active {
+  background: var(--purple-primary);
+  color: #fff;
+}
+
+.toggle-option:not(.active) {
+  background: transparent;
+  color: var(--text-muted);
+}
+
+/* ── Logo strip animation ─────────────────────────────────── */
+@keyframes logo-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.logo-strip {
+  display: flex;
+  gap: 48px;
+  animation: logo-scroll 30s linear infinite;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-surface); }
+::-webkit-scrollbar-thumb { background: var(--purple-border); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--purple-primary); }
+
+/* ── Canvas node animations ── */
+@keyframes node-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 #8B5CF650; }
+  50%      { box-shadow: 0 0 0 6px #8B5CF610; }
+}
+.node-running {
+  animation: node-pulse 1.2s ease-in-out infinite;
+  border-color: var(--purple-primary) !important;
+}
+.node-error  { border-color: var(--red-error) !important; }
+.node-done   { border-color: var(--green-live) !important; }
+
+/* ── Blinking cursor (kept for canvas) ── */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+.cursor-blink {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: var(--purple-primary);
+  animation: blink 1s step-end infinite;
+  vertical-align: text-bottom;
+  margin-left: 2px;
+}
+
+/* ── Edge animation on run ── */
+@keyframes edge-flow {
+  to { stroke-dashoffset: -20; }
+}
+
+/* ── React Flow dark overrides ── */
+.react-flow__controls {
+  background: var(--bg-elevated) !important;
+  border: 1px solid var(--purple-border) !important;
+  border-radius: 6px !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+}
+
+.react-flow__controls-button {
+  background: var(--bg-elevated) !important;
+  background-color: var(--bg-elevated) !important;
+  border-bottom: 1px solid var(--purple-border) !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  color: var(--text-muted) !important;
+  fill: var(--text-muted) !important;
+  width: 28px !important;
+  height: 28px !important;
+}
+
+.react-flow__controls-button:last-child {
+  border-bottom: none !important;
+}
+
+.react-flow__controls-button:hover {
+  background: var(--purple-border) !important;
+  background-color: var(--purple-border) !important;
+  color: var(--text-primary) !important;
+  fill: var(--text-primary) !important;
+}
+
+.react-flow__controls-button svg {
+  fill: var(--text-muted) !important;
+  max-width: 13px !important;
+  max-height: 13px !important;
+}
+
+.react-flow__controls-button:hover svg {
+  fill: var(--text-primary) !important;
+}
+
+.react-flow__minimap {
+  background: var(--bg-elevated) !important;
+  background-color: var(--bg-elevated) !important;
+  border: 1px solid var(--purple-border) !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+}
+
+.react-flow__minimap-svg {
+  background: var(--bg-elevated) !important;
+}
+
+.react-flow__panel {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.react-flow__attribution {
+  display: none !important;
+}
+
+/* ── Fade in animation ── */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+
+.animate-fade-in-delay-1 {
+  animation: fadeInUp 0.7s ease-out 0.1s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fadeInUp 0.7s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-delay-3 {
+  animation: fadeInUp 0.7s ease-out 0.3s forwards;
+  opacity: 0;
+}
